@@ -1,10 +1,10 @@
 <template>
   <v-app>
-    <v-content>
+    <v-main>
       <v-container>
         <nuxt />
       </v-container>
-    </v-content>
+    </v-main>
 
     <v-footer padless>
       <v-col cols="12" class="text-center">

@@ -3,7 +3,7 @@
     <template v-if="posts">
       <v-list three-line>
         <template v-for="(item, index) in posts">
-          <v-list-item v-bind:key="index">
+          <v-list-item v-if="true" v-bind:key="`i${index}`">
             <v-list-item-content>
               <v-list-item-title
                 >#{{ item.id }} {{ item.title }}</v-list-item-title
@@ -20,7 +20,7 @@
 
           <v-divider
             v-if="index + 1 < posts.length"
-            v-bind:key="'d' + index"
+            v-bind:key="`d${index}`"
           ></v-divider>
         </template>
       </v-list>
